@@ -1,0 +1,57 @@
+body {
+  background-color: hsl(210, 46%, 95%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+  padding: 2rem;
+}
+
+.testimonial-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.first {
+  background-color: hsl(263, 55%, 52%);
+  grid-column: span 2;
+}
+
+.second {
+  background-color: hsl(0, 0%, 81%);
+}
+
+.third {
+  background-color: hsl(0, 0%, 100%);
+  grid-row: span 2;
+}
+
+.fourth {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.fifth {
+  background-color: hsl(219, 29%, 14%);
+  grid-column: span 2;
+}
+
+
+
+
+
+
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

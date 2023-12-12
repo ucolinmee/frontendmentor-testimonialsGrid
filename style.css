@@ -4,10 +4,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
 .grid {
   display: grid;
+  max-width: 80vw;
+  max-height: 75vh;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 20px;
@@ -16,31 +19,87 @@ body {
 
 .testimonial-card {
   display: flex;
+  justify-content: space-around;
   flex-direction: column;
+  padding: 1.5rem;
+  border-radius: 10px;
 }
 
-.first {
+.profile img {
+  width: 1.7rem;
+  height: 1.7rem;
+  border-radius: 50%;
+  float: left;
+}
+
+.profile-text {
+  float: left;
+  margin-left: 1rem;
+}
+
+.profile-text > h3 {
+  font-size: 13px;
+  margin: 0px;
+  opacity: 90%;
+}
+
+.profile-text > p {
+  font-size: 10px;
+  margin-top: 0px;
+  opacity: 50%;
+}
+
+.testimonial-header > h1 {
+  font-size: 17px;
+  font-weight: 600;
+  opacity: 90%;
+  margin: 0;
+}
+
+.testimonial-description > p {
+  font-size: 13px;
+  font-weight: 500;
+  opacity: 50%;
+}
+
+.daniel {
   background-color: hsl(263, 55%, 52%);
   grid-column: span 2;
+  color: hsl(0, 0%, 100%);
 }
 
-.second {
-  background-color: hsl(0, 0%, 81%);
+.jonathan {
+  background-color: hsl(217, 19%, 35%);
+  color: hsl(0, 0%, 100%);
 }
 
-.third {
+.kira {
   background-color: hsl(0, 0%, 100%);
   grid-row: span 2;
+  color: hsl(217, 19%, 35%);
 }
 
-.fourth {
+.jeanette {
   background-color: hsl(0, 0%, 100%);
+  color: hsl(217, 19%, 35%);
 }
 
-.fifth {
+.patrick {
   background-color: hsl(219, 29%, 14%);
   grid-column: span 2;
+  color: hsl(0, 0%, 100%);
 }
+
+
+@media screen and (max-width: 375px) {
+  .grid {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+
+
 
 
 
